@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            background-image: url('Nature.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        button {
+            transition: all .5s ease;
+            color: #fff;
+            border: 3px solid white;
+            font-family:'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2;
+            font-size: 17px;
+            background-color : transparent;
+            padding: 5px;
+            outline: none;
+            border-radius: 25px;
+            margin-left: 290px;
+            margin-top: 30px;
+            width: 500px;
+        }
+        button:hover {
+            background-color: white;
+        }
+
+
+        /*NavBar*/
+        @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+
+ul {
+  position: relative;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 5px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+  margin-right: -1250px;
+}
+ul:hover li a {
+  color: #0002;
+}
+ul li:hover a {
+  color: #000;
+  background: transparent;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+ul li:nth-child(6n + 1) a:before {
+  background: #4f94e1;
+}
+ul li:nth-child(6n + 2) a:before {
+  background: #a29bfe;
+}
+ul li:nth-child(6n + 3) a:before {
+  background: #f28baf;
+}
+ul li:nth-child(6n + 4) a:before {
+  background: #ffeaa7;
+}
+/*ul li:nth-child(6n + 5) a:before {
+  background: #f28baf;
+}
+ul li:nth-child(6n + 6) a:before {
+  background: #ffeaa7;
+}*/
+
+
+
+    </style>
+</head>
+<body>
+  <!--Navbar-->
+    <ul>
+        <li><a target="_blank" href="./index.html" data-text="Home">Home</a></li>
+        <li><a target="_blank" href="https://medium.com/@TerriMKozlowski/how-to-expand-the-serenity-you-feel-in-your-life-5efc6849ba9b" data-text="Blogs">Blogs</a></li>
+        <li><a target="_blank" href="https://www.mind.org.uk/need-urgent-help/what-can-i-do-to-help-myself-cope/relaxing-and-calming-exercises/" data-text="Exercises">Exercises</a></li>
+        <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Contact">Contact</a></li>
+      </ul>
+
+<!--Categories-->
+    <h2 style="color: white;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 30px;margin-top: -120px;margin-left: 350px;">FIND YOUR INNER PEACE</h2>
+    <p style="margin-top:16px;margin-left: 260px;font-size: 25px;font-style: oblique;color: white;">Let's improve your health and happiness to live a long and peaceful life.</p>
+    <button><a href="https://www.healthline.com/nutrition/16-ways-relieve-stress-anxiety" style="text-decoration: none;">Reduce stress and anxiety</a></button>
+    <button><a href="https://www.betterup.com/blog/self-love" style="text-decoration: none;">Build up your Self-Love</a></button>
+    <button><a href="https://www.healthline.com/nutrition/17-tips-to-sleep-better" style="text-decoration: none;">Improve your Sleep Quality</a></button>
+    <button><a href="https://www.healthline.com/health/mental-health/how-to-improve-concentration" style="text-decoration: none;">Enhance your Focus</a></button>
+    <button><a href="https://www.webmd.com/fitness-exercise/boost-exercise-routine" style="text-decoration: none;">Boost your body fitness</a></button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
